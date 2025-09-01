@@ -93,3 +93,10 @@ background-color: aqua;
 .blackKey:active {
     background-color: blue;
 }
+
+img {
+    display: flex;
+    justify-content: center;
+    length: 75%;
+    width: 85%;
+}
