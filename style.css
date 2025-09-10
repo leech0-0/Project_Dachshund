@@ -1,3 +1,8 @@
+main {
+   display: grid; 
+   grid-template-rows: 100px 100px 100px;
+   grid-template-columns: 100px  100px 100px;
+}
 
 .keyboardCont{
     display: flex;
@@ -94,9 +99,11 @@ background-color: aqua;
     background-color: blue;
 }
 
-img {
-    display: flex;
-    justify-content: center;
-    length: 75%;
-    width: 85%;
+body {
+    background-color: #acc0f5;
+}
+
+.billyImage{
+    width: 50%;
+    height: 50%;
 }

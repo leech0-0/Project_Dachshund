@@ -18,7 +18,19 @@
 </head>
 <body>
 
+    <main>
+            <div class="billyImage">
     <img src="Assets/billy.PNG" alt="billy" id="billy">
+    </div>
+    </main>
+
+     <dialog id="introDialog">
+      <p>
+        This synthesizer will make some noise, please check your system's volume
+        setting.
+      </p>
+      <button id="dialogCloseButton" autofocus>OK</button>
+    </dialog>
 
     <div class="keyboardCont">
         <div class="octaveCont">
@@ -95,6 +107,35 @@
         </div>
 
     </div>
+
+<div class="sliders">
+    <div class="volumeSlider">
+        <p>volume</p>
+        <input type="range" min="0" max="100">
+    </div>
+    <div class="distortionSlider">
+        <p>distortion</p>
+        <input type="range" min="0" max="100">
+    </div>
+    <div class="bassSlider">
+        <p>bass</p>
+        <input type="range" min="0" max="100">
+    </div>
+    <div class="reverbSlider">
+        <p>reverb</p>
+        <input type="range" min="0" max="100">
+    </div>
+</div>
+
+<div class="buttons">
+    <button class="playButton">play</button>
+    <button class="pauseButton">pause</button>
+    <button class="randomiseButton">randomise</button>
+    <button class="bellButton">bell</button>
+    <button class="cymbalButton">symbol</button>
+    <button class="metronomeButton">metronome</button>
+    <button class="drumButton">drum</button>
+</div>
 
 </body>
 </html>
