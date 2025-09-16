@@ -124,22 +124,107 @@ body {
 position: absolute;
 top: 24%;
 left: 69.6%;
-background-color: purple;
-}
-
-.playButtonImage{
-    width: 45px;
-    height: 45px;
-}
-
-.pauseButtonImage{
-    width: 45px;
-    height: 45px;
+background-color: white;
 }
 
 .pauseButton{
 position: absolute;
 top: 32%;
 left: 70%;
-background-color: blue;
+background-color: white;
+}
+
+.bassImage{
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    width: 45px;
+    height: 45px;
+}
+
+.reverbImage{
+    position: absolute;
+    top: 79%;
+    left: 24%;
+    width: 45px;
+    height: 45px;
+}
+
+.distortionImage{
+    position: absolute;
+    top: 73%;
+    left: 24%;
+    width: 45px;
+    height: 45px;
+}
+
+.volumeImage{
+    position: absolute;
+    top: 75%;
+    left: 72%;
+    width: 45px;
+    height: 45px;
+}
+
+.volumeSlider{
+    transform: rotate(35deg);
+    position: absolute;
+    top: 85%;
+    left: 72%;
+}
+
+.reverbSlider{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 94%;
+    left: 62%;    
+}
+
+.bassSlider{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 92%;
+    left: 21%;    
+}
+
+.distortionSlider{
+    transform: rotate(-35deg);
+    position: absolute;
+    top: 85%;
+    left: 14%;
+}
+
+.randomiseButton{
+position: absolute;
+top: 7%;
+left: 89.5%;
+background-color: white;
+}
+
+.bellButton{
+position: absolute;
+top: 57%;
+left: 78%;
+background-color: white;
+}
+
+.cymbalButton{
+position: absolute;
+top: 52%;
+left: 75%;
+background-color: white;
+}
+
+.metronomeButton{
+position: absolute;
+top: 48%;
+left: 71%;
+background-color: white;
+}
+
+.drumButton{
+position: absolute;
+top: 44%;
+left: 68%;
+background-color: white;
 }
