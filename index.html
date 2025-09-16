@@ -26,7 +26,7 @@
       </p>
       <button id="dialogCloseButton" autofocus>OK</button>
     </dialog>
-<p></p>
+
     <div class="keyboardCont">
         <div class="octaveCont">
             <div class="whiteKeyCont">
@@ -105,34 +105,52 @@
 
 <div class="sliders">
     <div class="volumeSlider">
-        <p>volume</p>
         <input type="range" min="0" max="100">
     </div>
     <div class="distortionSlider">
-        <p>distortion</p>
         <input type="range" min="0" max="100">
     </div>
     <div class="bassSlider">
-        <p>bass</p>
         <input type="range" min="0" max="100">
     </div>
     <div class="reverbSlider">
-        <p>reverb</p>
         <input type="range" min="0" max="100">
     </div>
 </div>
 
 
 <div class="buttons">
-    <button class="playButton"><img src="Assets/reverb.PNG" class="playButtonImage"></button>
-    <button class="pauseButton"><img src="Assets/bass.PNG" class="pauseButtonImage"></button>
+    <button class="playButton">play</button>
+    <button class="pauseButton">pause</button>
     <button class="randomiseButton">randomise</button>
     <button class="bellButton">bell</button>
-    <button class="cymbalButton">symbol</button>
+    <button class="cymbalButton">cymbal</button>
     <button class="metronomeButton">metronome</button>
     <button class="drumButton">drum</button>
+</div>
+
+<div class="sliderImages">
+    <img src="Assets/bass.PNG" class="bassImage">
+    <img src="Assets/reverb.PNG" class="reverbImage">
+    <img src="Assets/distortion.PNG" class="distortionImage">
+    <img src="Assets/volume.PNG" class="volumeImage">
 </div>
 
 
 </body>
 </html>
+
+
+<!--CODE GRAVEYARD
+CSS - image placeholders
+
+.playButtonImage{
+    width: 45px;
+    height: 45px;
+}
+
+.pauseButtonImage{
+    width: 45px;
+    height: 45px;
+}
+-->
