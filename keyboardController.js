@@ -2,8 +2,7 @@
 ////////// Keyboard Controls      ////////////////////////////////////
 ////////////////////////////////////////////////////////////////////
 
-///////// Synthesizer
-/* this is our basic synth setup */
+///////// Synthesizer setup
 let polySynth = new Tone.PolySynth(Tone.Synth, {
   oscillator: {
     type: "fatsawtooth",

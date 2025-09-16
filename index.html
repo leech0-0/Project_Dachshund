@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project: Dachshund</title>
+    <title>Project: Dachshund</title> 
 
 <!-- Adding synthesizer - tone.js  -->
-<script src="http://unpkg.com/tone"></script>
+<script src="https://unpkg.com/tone"></script>
 
 <!-- Adding in Style sheet -->
 <link rel="stylesheet" href="style.css">
@@ -17,12 +17,7 @@
 
 </head>
 <body>
-
-    <main>
-            <div class="billyImage">
-    <img src="Assets/billy.PNG" alt="billy" id="billy">
-    </div>
-    </main>
+<img class="billyBackground" src="billyfull.PNG" alt="">
 
      <dialog id="introDialog">
       <p>
@@ -31,7 +26,7 @@
       </p>
       <button id="dialogCloseButton" autofocus>OK</button>
     </dialog>
-
+<p></p>
     <div class="keyboardCont">
         <div class="octaveCont">
             <div class="whiteKeyCont">
@@ -127,15 +122,17 @@
     </div>
 </div>
 
+
 <div class="buttons">
-    <button class="playButton">play</button>
-    <button class="pauseButton">pause</button>
+    <button class="playButton"><img src="Assets/reverb.PNG" class="playButtonImage"></button>
+    <button class="pauseButton"><img src="Assets/bass.PNG" class="pauseButtonImage"></button>
     <button class="randomiseButton">randomise</button>
     <button class="bellButton">bell</button>
     <button class="cymbalButton">symbol</button>
     <button class="metronomeButton">metronome</button>
     <button class="drumButton">drum</button>
 </div>
+
 
 </body>
 </html>
