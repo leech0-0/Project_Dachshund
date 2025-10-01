@@ -1,0 +1,21 @@
+// var sound1 = new buzz.sound("Assets/bell.mp3");
+
+// window.onload = function (){
+//     document.getElementById('bellButton').addEventListener('click', function () {sound1.play()});
+// }
+
+   // key.addEventListener("mouseleave", (e) => {
+    //   let note = e.target.dataset.note;
+    //   polySynth.triggerAttackRelease(note + octave, '8n');
+
+    // });
+
+
+//     let bell=document.getElementById("bellButton");
+
+
+// bell.addEventListener("click", sound());
+
+// function sound(){
+//     new Audio("Assets/bell.mp3").play();
+// }

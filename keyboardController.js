@@ -18,7 +18,6 @@ let polySynth = new Tone.PolySynth(Tone.Synth, {
     attackCurve: "exponential",
   },
 });
-// /* we don't connect it immediately to our audio driver, we wait for user interaction (via the modal) */
 function toneInit() {
   polySynth.toDestination();
 }
@@ -26,15 +25,10 @@ function toneInit() {
 // ///////// Intro Modal popup
 // /* find modal */
 let introModal = document.getElementById("introDialog");
-// /* to get the backdrop working we need to open the modal with js */
 document.getElementById("introDialog").showModal();
-/* find modal close button and add an eventlistener */
 document.getElementById("dialogCloseButton").addEventListener("click", () => {
   introModal.close();
 });
-// /* finally we want to initialize the synthesizer when the modal is closed */
-// /* because this can be through the above button, or by pressing esc, we tie it to the actual close event */
-// /* the referenced toneInit function is defined in toneSetup.js */
 introModal.addEventListener("close", toneInit);
 
 // /* find keys by their class and add to array */
@@ -62,9 +56,9 @@ allKeys.forEach(key => {
         let note = e.target.dataset.note;
         polySynth.triggerAttack(note + octave, '8n');
     });
-    key.addEventListener("mouseup", (e) => {
+    key.addEventListener("mouseup", e => {
       let note = e.target.dataset.note;
-      polySynth.triggerRelease(note + octave);
+      polySynth.triggerRelease(note + octave, '8n');
 
     });
     key.addEventListener("mouseenter", e => {
@@ -74,14 +68,5 @@ allKeys.forEach(key => {
         let note = e.target.dataset.note;
         polySynth.triggerAttackRelease(note + octave, '8n');
     });
-    key.addEventListener("mouseleave", (e) => {
-      let note = e.target.dataset.note;
-      polySynth.triggerAttackRelease(note + octave);
 
-    });
-allKeys.forEach((key) => {
-  key.addEventListener("mousedown", (e) => {
-    let note = e.target.dataset.note;
-    polySynth.triggerAttackRelease(note + octave, "8n");
   });
-}); });

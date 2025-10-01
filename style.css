@@ -56,6 +56,10 @@ background-color: aqua;
     flex: 1;
 }
 
+.blackKey{
+    background: black;
+}
+
 .ghostKey{
     flex: 0.5;
     opacity: 0;
@@ -206,6 +210,14 @@ position: absolute;
 top: 57%;
 left: 78%;
 background-color: white;
+}
+
+.bellButton:hover{
+    background-color:  rgb(200, 199, 199);
+}
+
+.bellButton:active{
+    background-color: aqua;
 }
 
 .cymbalButton{
