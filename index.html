@@ -8,8 +8,9 @@
 <!-- Adding synthesizer - tone.js  -->
 <script src="https://unpkg.com/tone"></script>
 
-<!-- Adding in Style sheet -->
+<!-- Adding in Style sheets -->
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="keyboardStyle.css">
 
 <!-- Adding in JS sheets -->
 <script src="keyboardController.js" defer></script>
@@ -20,12 +21,15 @@
 <body>
 <img class="billyBackground" src="assets/billyfull.PNG" alt="">
 
-     <dialog id="introDialog">
+     <dialog id="introDialog" class="introDialog">
       <p>
         This synthesizer will make some noise, please check your system's volume
         setting.
       </p>
-      <button id="dialogCloseButton" autofocus>OK</button>
+      <img src="Assets/scaleIcon.PNG" class="dialogPhoto">
+      <img src="Assets/scaleIcon.PNG" class="dialogPhoto2">
+      <img src="Assets/scaleIcon.PNG" class="dialogPhoto3">
+      <button id="dialogCloseButton" class="dialogButton" autofocus>OK</button>
     </dialog>
 
     <div class="keyboardCont">
@@ -104,30 +108,22 @@
 
     </div>
 
-<div class="sliders">
-    <div class="volumeSlider">
-        <input type="range" min="0" max="100">
-    </div>
-    <div class="distortionSlider">
-        <input type="range" min="0" max="100">
-    </div>
-    <div class="bassSlider">
-        <input type="range" min="0" max="100">
-    </div>
-    <div class="reverbSlider">
-        <input type="range" min="0" max="100">
-    </div>
+<div class="slideContainer">
+        <input type="range" min="0" max="10" value="0" class="bassSlider" id="bassRange">
+        <input type="range" min="0" max="10" value="0" class="reverbSlider" id="reverbRange">
+        <input type="range" min="0" max="10" value="0" class="volumeSlider" id="volumeRange">
+        <input type="range" min="0" max="10" value="0" class="distortionSlider" id="distortionRange">
 </div>
 
 
 <div class="buttons">
-    <button class="playButton" id="demoPlayButton" ><img src="play.PNG"></button>
-    <button class="pauseButton" id="demoPauseButton"><img src="pause.PNG"></button>
-    <button class="randomiseButton" id="randomiseButton"><img src="randomise.PNG"></button>
-    <button class="bellButton" id="bellButton"><img src="bell.PNG"></button>
-    <button class="cymbalButton" id="cymbalButton"><img src="cymbal.PNG"></button>
-    <button class="metronomeButton" id="metronomeButton"><img src="metronome.PNG"></button>
-    <button class="drumButton" id="drumButton"><img src="drum.PNG"></button>
+    <button class="playButton" id="demoPlayButton" ><img src="Assets/play.PNG" class="playButton"></button>
+    <button class="pauseButton" id="demoPauseButton"><img src="Assets/pause.PNG" class="pauseButton"></button>
+    <button class="randomiseButton" id="randomiseButton"><img src="Assets/randomise.PNG" class="randomiseButton"></button>
+    <button class="bellButton" id="bellButton"><img src="Assets/bell.PNG" class="bellButton"></button>
+    <button class="cymbalButton" id="cymbalButton"><img src="Assets/cymbal.PNG" class="cymbalButton"></button>
+    <button class="metronomeButton" id="metronomeButton"><img src="Assets/metronome.PNG" class="metronomeButton"></button>
+    <button class="drumButton" id="drumButton"><img src="Assets/drum.PNG" class="drumButton"></button>
 </div>
 
 <div class="sliderImages">

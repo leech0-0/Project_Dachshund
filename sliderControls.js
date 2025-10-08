@@ -1,20 +1,53 @@
 /////////////////////////////////////////////////////////////////////
 ////////// Volume Controls      ////////////////////////////////////
 ////////////////////////////////////////////////////////////////////
+var vslider = document.getElementById("volumeRange");
+
+vslider.addEventListener("mousemove", function(){
+    var x = vslider.value;
+    var colour = 'linear-gradient(90deg, #5e81db ' + (x * 10) + '%, #DDDDDD ' + (x * 10) + '%)';
+    vslider.style.background = colour;
+})
+
 
 /////////////////////////////////////////////////////////////////////
 ////////// Bass Controls      ////////////////////////////////////
 ////////////////////////////////////////////////////////////////////
+var bslider = document.getElementById("bassRange");
+
+bslider.addEventListener("mousemove", function(){
+    var x = bslider.value;
+    var colour = 'linear-gradient(90deg, #5e81db ' + (x * 10) + '%, #DDDDDD ' + (x * 10) + '%)';
+    bslider.style.background = colour;
+})
+
 
 /////////////////////////////////////////////////////////////////////
 ////////// Reverb Controls      ////////////////////////////////////
 ////////////////////////////////////////////////////////////////////
+var rslider = document.getElementById("reverbRange");
+
+rslider.addEventListener("mousemove", function(){
+    var x = rslider.value;
+    var colour = 'linear-gradient(90deg, #5e81db ' + (x * 10) + '%, #DDDDDD ' + (x * 10) + '%)';
+    rslider.style.background = colour;
+})
+
 
 /////////////////////////////////////////////////////////////////////
 ////////// Distortion Controls      /////////////////////////////////
 ////////////////////////////////////////////////////////////////////
+var dslider = document.getElementById("distortionRange");
 
+dslider.addEventListener("mousemove", function(){
+    var x = dslider.value;
+    var colour = 'linear-gradient(90deg, #5e81db ' + (x * 10) + '%, #DDDDDD ' + (x * 10) + '%)';
+    dslider.style.background = colour;
+})
 
 // /////////////////////////////////////////////////////////////////////
 // ////////// Randomness Controls      ////////////////////////////////////
 // ////////////////////////////////////////////////////////////////////
+
+// orders are now wrong for sliders, need to CSS position again
+// for some, image needs to be rotated

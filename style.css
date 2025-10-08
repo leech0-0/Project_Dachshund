@@ -11,110 +11,6 @@ body {
     height: 100%;
 }
 
-.keyboardCont{
-    position: absolute;
-    margin-left: 330px;
-    top: 53%;
-}
-.keyboardCont{
-    display: absolute;
-    height: 10rem;
-}
-
-.octaveCont{
-    width: 15rem;
-    position: relative;
-}
-
-.whiteKeyCont{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: stretch;
-}
-.whiteKey{
-    flex: 1;
-}
-
-.whiteKey:hover{
-cursor: pointer;;
-}
-
-.whiteKey:active{
-background-color: aqua;
-}
-.blackKeyCont{
-    position: absolute;
-    top: 0%;
-    display: flex;
-    height: 50%;
-    width: 100%;
-    align-items: stretch;
-}
-
-.blackKey{
-    flex: 1;
-}
-
-.blackKey{
-    background: black;
-}
-
-.ghostKey{
-    flex: 0.5;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.keyboardCont {
-  display: flex;
-  height: 10rem;
-}
-.octaveCont {
-  position: relative;
-  width: 15rem;
-}
-.whiteKeyCont {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  align-items: stretch;
-}
-.whiteKey {
-  flex: 1;
-}
-.whiteKey:hover {
-  cursor: pointer;
-}
-.whiteKey:active {
-  background-color: aqua;
-}
-.blackKeyCont {
-  position: absolute;
-  top: 0%;
-  display: flex;
-  height: 50%;
-  width: 100%;
-  align-items: stretch;
-  pointer-events: none;
-}
-.blackKey {
-  flex: 1;
-  pointer-events: all;
-}
-.ghostKey {
-  flex: 0.5;
-  opacity: 0;
-}
-
-.blackKey:hover {
-    cursor: pointer;
-}
-
-.blackKey:active {
-    background-color: blue;
-}
-
 body {
     background-color: #acc0f5;
 }
@@ -127,20 +23,26 @@ body {
 .playButton{
 position: absolute;
 top: 24%;
-left: 69.6%;
-background-color: white;
+left: 68%;
+background-color: transparent;
+border: none;
+width: 40px;
+height: 40px;
 }
 
 .pauseButton{
 position: absolute;
 top: 32%;
-left: 70%;
-background-color: white;
+left: 69%;
+background-color: transparent;
+border: none;
+width: 40px;
+height: 40px;
 }
 
 .bassImage{
     position: absolute;
-    top: 80%;
+    top: 97%;
     left: 65%;
     width: 45px;
     height: 45px;
@@ -148,16 +50,16 @@ background-color: white;
 
 .reverbImage{
     position: absolute;
-    top: 79%;
-    left: 24%;
+    top: 94%;
+    left: 24.9%;
     width: 45px;
     height: 45px;
 }
 
 .distortionImage{
     position: absolute;
-    top: 73%;
-    left: 24%;
+    top: 85%;
+    left: 15%;
     width: 45px;
     height: 45px;
     transform: rotate(180deg);
@@ -165,79 +67,204 @@ background-color: white;
 
 .volumeImage{
     position: absolute;
-    top: 75%;
-    left: 72%;
+    top: 88%;
+    left:80%;
     width: 45px;
     height: 45px;
 }
 
 .volumeSlider{
-    transform: rotate(35deg);
+    transform: rotate(215deg);
     position: absolute;
-    top: 85%;
+    top: 81%;
     left: 72%;
 }
 
 .reverbSlider{
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     position: absolute;
-    top: 94%;
-    left: 62%;    
+    top: 84.5%;
+    left: 21%;    
 }
 
 .bassSlider{
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     position: absolute;
-    top: 92%;
-    left: 21%;    
+    top: 88%;
+    left: 62%;    
 }
 
 .distortionSlider{
     transform: rotate(-35deg);
     position: absolute;
-    top: 85%;
-    left: 14%;
+    top: 78%;
+    left: 15%;
 }
 
 .randomiseButton{
 position: absolute;
-top: 7%;
-left: 89.5%;
-background-color: white;
+top: 5%;
+left: 88.5%;
+background-color: transparent;
+border: none;
+width: 40px;
+height: 35px;
 }
 
 .bellButton{
 position: absolute;
-top: 57%;
-left: 78%;
-background-color: white;
-}
-
-.bellButton:hover{
-    background-color:  rgb(200, 199, 199);
-}
-
-.bellButton:active{
-    background-color: aqua;
+top: 50%;
+left: 75%;
+background-color: transparent;
+border: none;
+width: 40px;
+height: 40px;
 }
 
 .cymbalButton{
 position: absolute;
-top: 52%;
-left: 75%;
-background-color: white;
+top: 46%;
+left: 72%;
+background-color: transparent;
+border: none;
+width: 40px;
+height: 40px;
 }
 
 .metronomeButton{
 position: absolute;
-top: 48%;
-left: 71%;
-background-color: white;
+top: 43.5%;
+left: 69%;
+background-color: transparent;
+border: none;
+width: 40px;
+height: 40px;
 }
 
 .drumButton{
 position: absolute;
-top: 44%;
-left: 68%;
-background-color: white;
+top: 41%;
+left: 66%;
+background-color: transparent;
+border: none;
+width: 40px;
+height: 40px;
+}
+
+.slideContainer{
+    width: 100%; 
+}
+
+.bassSlider {
+    -webkit-appearance: none;
+    width: 135px;
+    height: 20px;
+    background: linear-gradient(90deg, #DDDDDDDD);
+    border-radius: 12px;
+}
+
+.bassSlider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background: url('Assets/scaleIcon.PNG') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+.reverbSlider {
+    -webkit-appearance: none;
+    width: 135px;
+    height: 20px;
+    background: linear-gradient(90deg, #DDDDDDDD);
+    border-radius: 12px;
+}
+
+.reverbSlider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background: url('Assets/scaleIcon.PNG') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.volumeSlider {
+    -webkit-appearance: none;
+    width: 135px;
+    height: 20px;
+    background: linear-gradient(90deg, #DDDDDDDD);
+    border-radius: 12px;
+}
+
+.volumeSlider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background: url('Assets/scaleIcon.PNG') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.distortionSlider {
+    -webkit-appearance: none;
+    width: 135px;
+    height: 20px;
+    background: linear-gradient(90deg, #DDDDDDDD);
+    border-radius: 12px;
+}
+
+.distortionSlider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background: url('Assets/scaleIcon.PNG') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.dialogPhoto{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+}
+
+.dialogPhoto2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 64%;
+    left: 90%;
+}
+
+.introDialog{
+padding: 2%;
+border-radius: 12px;
+border-color: #3252A4;
+border-width: 4px;
+background-color: #acc0f5;
+}
+
+.dialogPhoto3{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 52%;
+    left: 4%;
+}
+
+.dialogButton{
+position: absolute;
+top: 78%;
+left: 6.8%;
+background-color: transparent;
+border: none;
 }

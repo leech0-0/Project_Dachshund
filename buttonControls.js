@@ -56,7 +56,7 @@ metronomeButton.addEventListener("click", () => {
 
 //play 
 
-const demoPlayer = new Tone.Player("./Assets/metronome.mp3").toDestination();//fix todestination later
+const demoPlayer = new Tone.Player("./Assets/playdemo.mp3").toDestination();//fix todestination later
 
 let playButton = document.getElementById("demoPlayButton");
 
