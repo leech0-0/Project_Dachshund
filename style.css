@@ -160,6 +160,7 @@ background-color: white;
     left: 24%;
     width: 45px;
     height: 45px;
+    transform: rotate(180deg);
 }
 
 .volumeImage{
