@@ -30,6 +30,10 @@ width: 40px;
 height: 40px;
 }
 
+.playButton:hover{
+    cursor: pointer;
+}
+
 .pauseButton{
 position: absolute;
 top: 32%;
@@ -38,6 +42,10 @@ background-color: transparent;
 border: none;
 width: 40px;
 height: 40px;
+}
+
+.pauseButton:hover{
+cursor: pointer;
 }
 
 .bassImage{
@@ -111,6 +119,10 @@ width: 40px;
 height: 35px;
 }
 
+.randomiseButton:hover{
+    cursor: pointer;
+}
+
 .bellButton{
 position: absolute;
 top: 50%;
@@ -119,6 +131,10 @@ background-color: transparent;
 border: none;
 width: 40px;
 height: 40px;
+}
+
+.bellButton:hover{
+    cursor: pointer;
 }
 
 .cymbalButton{
@@ -131,6 +147,10 @@ width: 40px;
 height: 40px;
 }
 
+.cymbalButton:hover{
+    cursor: pointer;
+}
+
 .metronomeButton{
 position: absolute;
 top: 43.5%;
@@ -141,6 +161,10 @@ width: 40px;
 height: 40px;
 }
 
+.metronomeButton:hover{
+    cursor: pointer;
+}
+
 .drumButton{
 position: absolute;
 top: 41%;
@@ -149,6 +173,10 @@ background-color: transparent;
 border: none;
 width: 40px;
 height: 40px;
+}
+
+.drumButton:hover{
+cursor: pointer;
 }
 
 .slideContainer{
@@ -268,4 +296,20 @@ top: 78%;
 left: 6.8%;
 background-color: transparent;
 border: none;
+}
+
+#borderkey1{
+border-radius: 10px 0% 0% 10px;
+}
+
+#borderkey2{
+border-radius: 0% 10px 10px 0%;
+}
+
+#borderkeyblack1{
+border-radius: 0% 0% 0% 10px;
+}
+
+#borderkeyblack2{
+border-radius: 0% 0% 10px 0%;
 }

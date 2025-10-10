@@ -28,9 +28,6 @@
 cursor: pointer;;
 }
 
-.whiteKey:active{
-background-color: aqua;
-}
 .blackKeyCont{
     position: absolute;
     top: 0%;
@@ -74,9 +71,7 @@ background-color: aqua;
 .whiteKey:hover {
   cursor: pointer;
 }
-.whiteKey:active {
-  background-color: aqua;
-}
+
 .blackKeyCont {
   position: absolute;
   top: 0%;
@@ -99,13 +94,34 @@ background-color: aqua;
     cursor: pointer;
 }
 
-.blackKey:active {
-    background-color: blue;
+.whiteKey.hover{
+    cursor: pointer;
 }
 
 #octave1 .whiteKey:active{
-    background-color: blue;
+    background-color: #8faaef;
 }
+
+#octave1 .blackKey:active{
+    background-color: #C98fef;
+}
+
+#octave2 .whiteKey:active{
+    background-color: #5e81db;
+}
+
+#octave2 .blackKey:active{
+    background-color: #9e5edb;
+}
+
+#octave3 .whiteKey:active{
+    background-color: #3252A4;
+}
+
+#octave3 .blackKey:active{
+    background-color: #6632a4;
+}
+
 
 .square1{
     width: 30px;
@@ -204,3 +220,193 @@ background-color: aqua;
     left: 59.45%;
 }
 
+.circle1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 68.2%;
+    left: 27.8%;
+}
+
+.circle2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 68.2%;
+    left: 44.1%;
+}
+.circle3{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 68.2%;
+    left: 60.4%;
+}
+
+.heart4{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 58.7%;
+    left: 31.75%;
+}
+
+.heart5{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 58.7%;
+    left: 48.1%;
+}
+
+.heart6{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 58.7%;
+    left: 64.4%;
+}
+
+.heart1{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.8%;
+    left: 30%;
+}
+
+.heart2{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.8%;
+    left: 46.3%;
+}
+
+.heart3{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.8%;
+    left: 62.6%;
+}
+
+.hexagon1{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.9%;
+    left: 32.3%;
+}
+
+.hexagon2{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.9%;
+    left: 48.6%;
+}
+
+.hexagon3{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.9%;
+    left: 64.9%;
+}
+
+.hexagon4{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 58.7%;
+    left: 33.75%;
+}
+
+.hexagon5{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 58.7%;
+    left: 50.1%;
+}
+
+.hexagon6{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 58.7%;
+    left: 66.4%;
+}
+
+.rhombus1{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.9%;
+    left: 34.6%;
+}
+
+.rhombus2{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.9%;
+    left: 50.97%;
+}
+
+.rhombus3{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.9%;
+    left: 67.3%;
+}
+
+.rhombus4{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 58.7%;
+    left: 35.8%;
+}
+
+.rhombus5{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 58.7%;
+    left: 52.1%;
+}
+
+.rhombus6{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 58.7%;
+    left: 68.5%;
+}
+
+.star1{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.5%;
+    left: 37%;
+}
+
+.star2{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.5%;
+    left: 53.3%;
+}
+
+.star3{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 67.5%;
+    left: 69.7%;
+}
