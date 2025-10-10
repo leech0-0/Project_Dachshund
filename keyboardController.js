@@ -36,9 +36,6 @@ let allKeys = Array.from(document.getElementsByClassName("whiteKey")).concat(
   Array.from(document.getElementsByClassName("blackKey"))
 );
 
-// /* set default octave : we will update based on keys later on */
-let octave = 3;
-
 // /* add an event listener to each key */
 
 let keyPressed = false;
@@ -54,10 +51,12 @@ window.addEventListener("mouseup", () => {
 allKeys.forEach(key => {
     key.addEventListener("mousedown", e => {
         let note = e.target.dataset.note;
+        let octave = e.target.parentElement.parentElement.dataset.octave;
         polySynth.triggerAttack(note + octave, '8n');
     });
     key.addEventListener("mouseup", e => {
       let note = e.target.dataset.note;
+      let octave = e.target.parentElement.parentElement.dataset.octave;
       polySynth.triggerRelease(note + octave, '8n');
 
     });

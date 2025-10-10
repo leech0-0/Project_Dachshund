@@ -227,6 +227,7 @@ height: 40px;
     background: url('Assets/scaleIcon.PNG') no-repeat center center;
     background-size: cover;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .dialogPhoto{

@@ -102,3 +102,105 @@ background-color: aqua;
 .blackKey:active {
     background-color: blue;
 }
+
+#octave1 .whiteKey:active{
+    background-color: blue;
+}
+
+.square1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 68%;
+    left: 23.2%;
+}
+
+.square2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 68%;
+    left: 39.5%;
+}
+
+.square3{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 68%;
+    left: 55.76%;
+}
+
+.square4{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 58.8%;
+    left: 24.8%;
+}
+
+.square5{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 58.8%;
+    left: 41.15%;
+}
+
+.square6{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 58.8%;
+    left: 57.45%;
+}
+
+.triangle1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 68.2%;
+    left: 25.5%;
+}
+
+.triangle2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 68.2%;
+    left: 41.8%;
+}
+
+
+.triangle3{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 68.2%;
+    left: 58.1%;
+}
+
+.triangle4{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 58.9%;
+    left: 26.8%;
+}
+
+.triangle5{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 58.9%;
+    left: 43.1%;
+}
+
+.triangle6{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 58.9%;
+    left: 59.45%;
+}
+

@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="keyboardStyle.css">
 
 <!-- Adding in JS sheets -->
-<script src="keyboardController.js" defer></script>
+<!-- <script src="keyboardController.js" defer></script> -->
 <script src="sliderControls.js" defer></script>
 <script src="buttonControls.js" defer></script>
 
@@ -33,7 +33,7 @@
     </dialog>
 
     <div class="keyboardCont">
-        <div class="octaveCont">
+        <div class="octaveCont" data-octave="2" id="octave1">
             <div class="whiteKeyCont">
                <button class="whiteKey" data-note="c"></button>
                <button class="whiteKey" data-note="d"></button>
@@ -58,7 +58,7 @@
 
         </div>
 
-        <div class="octaveCont">
+        <div class="octaveCont" data-octave="3" id="octave2">
             <div class="whiteKeyCont">
                <button class="whiteKey" data-note="c"></button>
                <button class="whiteKey" data-note="d"></button>
@@ -81,7 +81,7 @@
                <button class="ghostKey"></button>
           </div>
 
-        </div><div class="octaveCont">
+        </div><div class="octaveCont" data-octave="4" id="octave3">
             <div class="whiteKeyCont">
                <button class="whiteKey" data-note="c"></button>
                <button class="whiteKey" data-note="d"></button>
@@ -133,21 +133,20 @@
     <img src="Assets/volumeClear.PNG" class="volumeImage">
 </div>
 
-
+<div class="keyboardImages">
+    <img src="Assets/squareOctave1.PNG" class="square1">
+    <img src="Assets/squareOctave2.PNG" class="square2">
+    <img src="Assets/squareOctave3.PNG" class="square3">
+    <img src="Assets/squareSharp1.PNG" class="square4">
+    <img src="Assets/squareSharp2.PNG" class="square5">
+    <img src="Assets/squareSharp3.PNG" class="square6">
+    <img src="Assets/triangleOctave1.PNG" class="triangle1">
+    <img src="Assets/triangleOctave2.PNG" class="triangle2">
+    <img src="Assets/triangleOctave3.PNG" class="triangle3">
+    <img src="Assets/triangleSharp1.PNG" class="triangle4">
+    <img src="Assets/triangleSharp2.PNG" class="triangle5">
+    <img src="Assets/triangleSharp3.PNG" class="triangle6">
+</div>
 </body>
 </html>
 
-
-<!--CODE GRAVEYARD
-CSS - image placeholders
-
-.playButtonImage{
-    width: 45px;
-    height: 45px;
-}
-
-.pauseButtonImage{
-    width: 45px;
-    height: 45px;
-}
--->
