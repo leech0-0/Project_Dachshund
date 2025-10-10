@@ -44,10 +44,3 @@ dslider.addEventListener("mousemove", function(){
     var colour = 'linear-gradient(90deg, #5e81db ' + (x * 10) + '%, #DDDDDD ' + (x * 10) + '%)';
     dslider.style.background = colour;
 })
-
-// /////////////////////////////////////////////////////////////////////
-// ////////// Randomness Controls      ////////////////////////////////////
-// ////////////////////////////////////////////////////////////////////
-
-// orders are now wrong for sliders, need to CSS position again
-// for some, image needs to be rotated
