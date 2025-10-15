@@ -128,12 +128,32 @@ random.addEventListener("click", function(){
 })
 
 
-// const volume = new Tone.Volume(100).toDestination();
-// const osc = new Tone.Oscillator().connect(volume).start();
+//////////////////////////////////
+//// Volume ///////
+/////////////////////////////////
+let vslider = document.getElementById("volumeRange");
+
+vslider.addEventListener("mousemove", function(){
+    var w = parseInt(vslider.value) + 10;
+    console.log(w);
+    var colour = 'linear-gradient(90deg, #5e81db ' + (w * 10) + '%, #DDDDDD ' + (w * 10) + '%)';
+    vslider.style.background = colour;
+    var volumeset = vslider.value;
+
+   polySynth.volume.value = volumeset;
+   bellPlayer.volume.value = volumeset;
+   cymbalPlayer.volume.value = volumeset;
+   drumPlayer.volume.value = volumeset;
+   metronomePlayer.volume.value = volumeset;
+   demoPlayer.volume.value = volumeset;
+    //console.log(volumeset);
+})
+
+
+//FILL IN - LAST THING TO GET WORKING //
 
 
 // ///////// Intro Modal popup
-// /* find modal */
 let introModal = document.getElementById("introDialog");
 document.getElementById("introDialog").showModal();
 document.getElementById("dialogCloseButton").addEventListener("click", () => {
@@ -141,12 +161,10 @@ document.getElementById("dialogCloseButton").addEventListener("click", () => {
 });
 introModal.addEventListener("close", toneInit);
 
-// /* find keys by their class and add to array */
 let allKeys = Array.from(document.getElementsByClassName("whiteKey")).concat(
   Array.from(document.getElementsByClassName("blackKey"))
 );
 
-// /* add an event listener to each key */
 
 let keyPressed = false;
 
@@ -188,6 +206,4 @@ allKeys.forEach(key => {
 function toneInit() {
   Tone.start();
   polySynth.chain(reverb, EQ3, distortion, Tone.Destination);
-
-  //polySynth.toDestination();
 }
