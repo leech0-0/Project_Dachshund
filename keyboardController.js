@@ -150,9 +150,6 @@ vslider.addEventListener("mousemove", function(){
 })
 
 
-//FILL IN - LAST THING TO GET WORKING //
-
-
 // ///////// Intro Modal popup
 let introModal = document.getElementById("introDialog");
 document.getElementById("introDialog").showModal();
