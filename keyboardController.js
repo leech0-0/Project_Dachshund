@@ -18,9 +18,119 @@ let polySynth = new Tone.PolySynth(Tone.Synth, {
     attackCurve: "exponential",
   },
 });
-function toneInit() {
-  polySynth.toDestination();
-}
+
+/////////////////////////////////////////////////////////////////////
+////////// Distortion Controls    ////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+const distortion = new Tone.Distortion(1);
+distortion.wet.value = 0; 
+
+
+var dslider = document.getElementById("distortionRange");
+
+dslider.addEventListener("mousemove", function(){
+    var y = dslider.value;
+    var colour = 'linear-gradient(90deg, #5e81db ' + (y * 10) + '%, #DDDDDD ' + (y * 10) + '%)';
+    dslider.style.background = colour;
+    var distortionwet = dslider.value;
+
+    distortion.wet.value = distortionwet / 10;
+    console.log(distortionwet);
+})
+
+/////////////////////////////////////////////////////////////////////
+////////// Reverb Controls    ////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+const reverb = new Tone.Reverb(1);
+reverb.wet.value = 0; 
+
+
+var rslider = document.getElementById("reverbRange");
+
+rslider.addEventListener("mousemove", function(){
+    var x = rslider.value;
+    var colour = 'linear-gradient(90deg, #5e81db ' + (x * 10) + '%, #DDDDDD ' + (x * 10) + '%)';
+    rslider.style.background = colour;
+    var reverbwet = rslider.value;
+
+    reverb.wet.value = reverbwet / 10;
+    console.log(reverbwet);
+})
+
+
+
+/////////////////////////////////////////////////////////////////////
+////////// Bass Controls      ////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+const EQ3 = new Tone.EQ3(0,0,0);
+
+
+
+var bslider = document.getElementById("bassRange");
+
+bslider.addEventListener("mousemove", function(){
+    var w = bslider.value;
+    var colour = 'linear-gradient(90deg, #5e81db ' + (w * 10) + '%, #DDDDDD ' + (w * 10) + '%)';
+    bslider.style.background = colour;
+    var basswet = bslider.value;
+
+   EQ3.set({low: basswet * 10}); 
+    console.log(basswet);
+})
+
+
+
+///////////////////////////////////////////////////////////////////////
+//////////// Randomness Controls      ////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+const random = document.getElementById("randomiseButton");
+const myLabel = document.getElementById("myLabel");
+const min = 0;
+const max = 11;
+let randomNum;
+
+random.addEventListener("click", function(){
+    randomNum = Math.floor(Math.random() * max);
+    console.log(randomNum);
+    dslider.value = randomNum;
+    var y = dslider.value;
+    var colour = 'linear-gradient(90deg, #5e81db ' + (y * 10) + '%, #DDDDDD ' + (y * 10) + '%)';
+    dslider.style.background = colour;
+    var distortionwet = dslider.value;
+
+    distortion.wet.value = distortionwet / 10;
+    console.log(distortionwet);
+
+
+    randomNum = Math.floor(Math.random() * max);
+    console.log(randomNum);
+    rslider.value = randomNum;
+    var x = rslider.value;
+    var colour = 'linear-gradient(90deg, #5e81db ' + (x * 10) + '%, #DDDDDD ' + (x * 10) + '%)';
+    rslider.style.background = colour;
+    var reverbwet = rslider.value;
+
+    reverb.wet.value = reverbwet / 10;
+    console.log(reverb);
+
+
+    randomNum = Math.floor(Math.random() * max);
+    console.log(randomNum);
+    bslider.value = randomNum;
+    var w = bslider.value;
+    var colour = 'linear-gradient(90deg, #5e81db ' + (w * 10) + '%, #DDDDDD ' + (w * 10) + '%)';
+    bslider.style.background = colour;
+    var basswet = bslider.value;
+
+    EQ3.set({low: basswet * 10}); 
+    console.log(basswet);
+})
+
+
+// const volume = new Tone.Volume(100).toDestination();
+// const osc = new Tone.Oscillator().connect(volume).start();
+
 
 // ///////// Intro Modal popup
 // /* find modal */
@@ -69,3 +179,15 @@ allKeys.forEach(key => {
     });
 
   });
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////// Tone Desitination    /////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function toneInit() {
+  Tone.start();
+  polySynth.chain(reverb, EQ3, distortion, Tone.Destination);
+
+  //polySynth.toDestination();
+}
